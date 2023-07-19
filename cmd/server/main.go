@@ -15,6 +15,7 @@ var controlConn *net.TCPConn
 var userConn *net.TCPConn
 var wg sync.WaitGroup
 
+// 将server打包,放置在外网服务器并运行
 func main() {
 	wg.Add(1)
 	// 控制中心监听
